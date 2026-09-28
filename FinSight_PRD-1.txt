@@ -1,0 +1,301 @@
+FINSIGHT — DATA ANALYTICS & PERSONAL FINANCE APP
+Product Requirements Document (PRD)
+
+1. PROJECT OVERVIEW
+FinSight is a data analytics-based personal finance application that helps users record income and expenses, understand spending patterns, monitor budgets and savings, and receive data-driven financial insights.
+
+The main purpose of the project is to demonstrate how raw financial data can be collected, processed, analyzed, visualized, and converted into useful insights through a user-friendly application.
+
+2. PROJECT OBJECTIVES
+• Track personal income and expenses.
+• Categorize transactions for meaningful analysis.
+• Provide interactive dashboards and visualizations.
+• Identify spending trends and high-spending categories.
+• Compare actual spending with planned budgets.
+• Analyze savings behavior.
+• Detect unusual spending patterns.
+• Generate data-driven insights and reports.
+• Demonstrate practical use of data analytics in a real-world application.
+
+3. TARGET USERS
+• College students
+• Young professionals
+• Individuals who want to understand their personal spending
+• Users who want a simple way to monitor budgets and savings
+
+4. CORE FEATURES
+
+4.1 User Authentication
+• User registration and login.
+• Secure user session.
+• Logout functionality.
+
+4.2 Dashboard
+The dashboard provides a quick financial overview:
+• Total income
+• Total expenses
+• Total savings
+• Current budget status
+• Recent transactions
+• Spending summary
+• Key financial insights
+
+4.3 Income & Expense Tracking
+Users can:
+• Add income transactions.
+• Add expense transactions.
+• Select a category.
+• Enter amount, date and description.
+• Edit or delete transactions.
+• View transaction history.
+
+4.4 Expense Categories
+Example categories:
+• Food
+• Shopping
+• Transport
+• Education
+• Entertainment
+• Bills
+• Healthcare
+• Travel
+• Other
+
+4.5 Data Analytics
+FinSight analyzes transaction data to provide:
+• Category-wise spending analysis
+• Monthly and weekly spending trends
+• Income vs expense comparison
+• Savings trend
+• Highest spending categories
+• Average spending
+• Budget utilization
+• Spending pattern analysis
+
+4.6 Data Visualization
+The application should use charts such as:
+• Pie/donut chart for expense distribution
+• Bar chart for category comparison
+• Line chart for monthly spending trends
+• Income vs expense chart
+• Savings trend chart
+• Budget vs actual spending chart
+
+4.7 Budget Management
+Users can:
+• Set monthly budgets.
+• Set category-wise budgets.
+• Track budget usage.
+• View remaining budget.
+• Receive an alert/indicator when spending approaches or exceeds a budget.
+
+4.8 Savings Analysis
+The application calculates:
+• Total savings
+• Monthly savings
+• Savings rate
+• Savings trend
+• Income-to-expense relationship
+
+4.9 Unusual Spending Detection
+The analytics module can identify transactions or periods that differ significantly from a user's normal spending pattern.
+
+Examples:
+• An unusually high expense.
+• A category suddenly increasing compared with previous periods.
+• Spending that exceeds a normal historical range.
+
+4.10 Smart Insights
+Based on analyzed data, FinSight can generate simple insights such as:
+• Which category has the highest spending.
+• Whether expenses increased or decreased.
+• Whether the user is within the planned budget.
+• Which month had the highest expenses.
+• How savings changed over time.
+
+4.11 Reports
+Users can view or generate a financial summary containing:
+• Income
+• Expenses
+• Savings
+• Category breakdown
+• Budget performance
+• Trends
+• Key insights
+
+5. DATA ANALYTICS PIPELINE
+
+User Transaction Data
+        ↓
+Data Collection
+        ↓
+Data Cleaning & Validation
+        ↓
+Data Transformation
+        ↓
+Exploratory Data Analysis
+        ↓
+Statistical Analysis
+        ↓
+Trend / Pattern Detection
+        ↓
+Visualization
+        ↓
+Insights & Reports
+
+6. TECHNOLOGY STACK
+
+Frontend:
+• React.js
+• HTML
+• CSS
+• JavaScript
+• Charting library such as Recharts
+
+Backend:
+• Node.js
+• Express.js
+
+Database:
+• MongoDB
+
+Analytics:
+• Python
+• Pandas
+• NumPy
+• Scikit-learn (where appropriate)
+
+Development Tools:
+• VS Code
+• Git
+• GitHub
+
+7. HIGH-LEVEL SYSTEM ARCHITECTURE
+
+User
+  ↓
+FinSight Frontend
+  ↓
+Backend API
+  ↓
+Database
+  ↓
+Analytics Processing
+  ↓
+Processed Financial Data
+  ↓
+Charts + Insights + Reports
+  ↓
+User Dashboard
+
+8. MAIN APPLICATION PAGES
+
+• Landing / Welcome Page
+• Login / Register Page
+• Dashboard
+• Transactions Page
+• Add Transaction Page
+• Analytics Page
+• Budget Page
+• Savings Page
+• Reports Page
+• Profile / Settings Page
+
+9. IMPORTANT DATA FIELDS
+
+Transaction:
+• Transaction ID
+• User ID
+• Type (Income/Expense)
+• Amount
+• Category
+• Date
+• Description
+
+Budget:
+• Budget ID
+• User ID
+• Category
+• Budget Amount
+• Month
+
+10. KEY ANALYTICS METRICS
+
+• Total Income
+• Total Expenses
+• Total Savings
+• Savings Rate
+• Average Monthly Expense
+• Average Daily Expense
+• Highest Expense Category
+• Budget Utilization
+• Month-over-Month Spending Change
+• Category Spending Share
+• Number of Transactions
+
+11. NON-FUNCTIONAL REQUIREMENTS
+
+Performance:
+• Dashboard should load efficiently.
+• Charts should render smoothly for normal user datasets.
+
+Usability:
+• Simple and beginner-friendly interface.
+• Clear navigation.
+• Responsive design for desktop and mobile screens.
+
+Security:
+• Passwords should be securely handled.
+• Users should only access their own financial data.
+• API endpoints should validate incoming data.
+
+Reliability:
+• Invalid transactions should not be stored.
+• Calculations should remain consistent across dashboard and reports.
+
+12. UI/UX DIRECTION
+
+Theme:
+• Modern finance dashboard
+• Clean and professional interface
+• Dark/light theme can be supported
+• Clear cards and charts
+• Simple navigation
+• Responsive layout
+
+Brand:
+Name: FinSight
+
+Logo concept:
+A gender-neutral person wearing headphones with a financial/money element nearby, representing the combination of technology, personal finance, and data-driven insights.
+
+13. PROJECT USP
+
+FinSight is not only an expense-tracking application. Its primary focus is converting personal financial records into meaningful analytical information.
+
+The project demonstrates:
+• Data collection
+• Data preprocessing
+• Exploratory data analysis
+• Statistical calculations
+• Data visualization
+• Pattern detection
+• Insight generation
+• Practical application development
+
+14. FUTURE ENHANCEMENTS
+
+• Bank statement/CSV import
+• Advanced predictive analytics
+• Personalized budgeting suggestions
+• More advanced anomaly detection
+• Automated monthly reports
+• Natural-language analytics assistant
+• Mobile application version
+• Additional financial datasets for research
+
+15. EXPECTED OUTCOME
+
+The final FinSight application should allow a user to enter financial transactions and immediately understand their financial behavior through dashboards, charts, metrics, trends, and data-driven insights.
+
+The project should clearly demonstrate the practical implementation of Data Analytics in a real-world personal finance use case.
